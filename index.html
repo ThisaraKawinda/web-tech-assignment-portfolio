@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thisara Kawinda | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* --- CSS VARIABLES FOR DARK THEME --- */
+    :root {
+        --primary-color: #00ff41; /* Hacker Green */
+        --bg-color: #0d1117;      /* Dark Background */
+        --card-bg: #161b22;       /* Slightly lighter for sections */
+        --text-color: #c9d1d9;    /* Soft White */
+        --border-color: #30363d;  /* Dark Grey Border */
+        --font-mono: 'Roboto Mono', monospace;
+    }
+
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: var(--font-mono); /* Monospace font everywhere */
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Layout Containers */
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: transparent; /* Let body background show through */
+    }
+
+    /* Navigation */
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      background-color: #010409; /* Very dark header */
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: var(--primary-color); /* Turns green on hover */
+    }
+
+    /* Section Styling */
+    section {
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    h1, h2, h3 {
+      color: var(--primary-color); /* Green Headings */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+
+    /* Lists */
+    ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+        color: #fff; /* Make important text pure white */
+    }
+
+    /* Project Cards */
+    article {
+      background: var(--card-bg);
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--primary-color); /* Green accent on left */
+      border-radius: 4px;
+    }
+
+    /* Links in Contact */
+    a {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #8b949e;
+      font-size: 0.9em;
+      margin-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Thisara Kawinda</h1>
+    <p style="color: #8b949e;">root@portfolio:~/Entry-Level-Analyst#</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a cybersecurity enthusiast and student focusing on network defense and secure web development. 
+      I have experience using Python for security automation and enjoy solving technical challenges.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Network Analysis (Wireshark, Nmap)</li>
+      <li>Python Scripting & Automation</li>
+      <li>Vulnerability Assessment</li>
+      <li>Linux System Administration</li>
+      <li>HTML, CSS, & JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="credentials">
+    <h2>Credentials & Certifications</h2>
+    <ul>
+      <li><strong>CompTIA Security+</strong> (In Progress)</li>
+      <li><strong>Google Cybersecurity Professional Certificate</strong> - Coursera</li>
+      <li><strong>ISC2 Certified in Cybersecurity (CC)</strong></li>
+      <li><strong>Bachelor of Computing (Honors) in Information Systems</strong> (Expected 2027)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    
+    <article>
+      <h3>Python Port Scanner</h3>
+      <p>A tool built with Python to identify open ports on a network, helping to assess system vulnerabilities.</p>
+    </article>
+
+    <article>
+      <h3>Network Packet Sniffer</h3>
+      <p>A script designed to capture and analyze network traffic to detect unencrypted data flow.</p>
+    </article>
+
+    <article>
+      <h3>Keylogger Detection Demo</h3>
+      <p>An educational project demonstrating how malware captures keystrokes and how to detect it.</p>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:thisarakawinda2002@gmail.com">thisarakawinda2002@gmail.com</a></p>
+    <p>
+      <a href="#">GitHub Profile</a> | 
+      <a href="#">LinkedIn Profile</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Thisara Kawinda</p>
+  </footer>
+
+  <script>
+    // Just the year update, no animations
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
